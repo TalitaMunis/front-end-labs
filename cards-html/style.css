@@ -1,0 +1,99 @@
+/* Estilo base do corpo da página */
+body {
+  background-color: #f0f6ff; /* Fundo azul clarinho */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal que envolve os blocos de planos */
+.planos {
+  display: flex; /* Usa Flexbox para organizar os blocos */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 40px; /* Espaço entre os blocos */
+  height: 100vh; /* Ocupa a altura inteira da tela */
+  padding: 0 40px; /* Espaço lateral interno */
+}
+
+/* Cada bloco de plano */
+.plano {
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 12px; /* Cantos arredondados */
+  padding: 50px 40px; /* Espaço interno */
+  width: 340px; /* Largura do bloco */
+  height: 550px; /* Altura do bloco */
+
+  display: flex; /* Flexbox para centralizar conteúdo */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+/* Título do plano */
+.plano h2 {
+  color: #007bff; /* Azul para título */
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Estilo do preço (linha toda) */
+.preco {
+  margin: 20px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* "R$" em tamanho menor */
+.moeda {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Valor em destaque */
+.valor {
+  font-size: 34px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* "/mês" discreto */
+.periodo {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Lista de benefícios */
+.plano ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Itens da lista */
+.plano li {
+  margin: 12px 0;
+}
+
+/* Botão "Assinar" */
+.plano button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover do botão */
+.plano button:hover {
+  background-color: #0056b3;
+}
