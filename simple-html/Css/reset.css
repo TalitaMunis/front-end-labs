@@ -18,7 +18,6 @@ reset.css
  
   img, video {
     max-width: 100%;
-    display: block;
   }
  
   button, input, textarea, select {
