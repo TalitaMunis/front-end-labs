@@ -1,2 +1,14 @@
-let nome = "Talita";
-alert("Boa noite, " + nome);
+//let nome = "Talita";
+//alert("Boa noite, " + nome);
+
+const linkExterno = 
+        document.querySelector('a[title="Google Maps"]');
+
+
+linkExterno.addEventListener('click', (e) => {
+    const option = 
+        confirm("Você será redirecionado para um link externo.");
+    if (option === false) {
+        e.preventDefault();
+    }
+});
