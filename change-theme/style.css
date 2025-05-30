@@ -1,39 +1,39 @@
-
 :root{
-    /*cores do tema light*/
+    /*Cores do tema light*/
     --light-bg: #f5f5f5;
     --light-text: #333;
     --light-card: #fff;
-    --light-shadow: rgba(0,0,0,0.1);
+    --light-shadow: rgba(0, 0, 0, 0.1);
 
-    /*cores do tema dark*/
-    --dark-bg:#1a1a1a;
+    /*Cores do tema dark*/
+    --dark-bg: #1a1a1a;
     --dark-text: #f5f5f5;
     --dark-card: #2d2d2d;
-    --dark-shadow: rgba(0,0,0,0.3)
+    --dark-shadow: rgba(0, 0, 0, 0.3);
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     transition: all 0.3s ease;
 }
 
-.light-theme{
+.light-theme {
     background-color: var(--light-bg);
     color: var(--light-text);
 }
-.dark-theme{
+
+.dark-theme {
     background-color: var(--dark-bg);
     color: var(--dark-text);
 }
 
-.container{
+.container {
     max-width: 800px;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 2rem;
 }
 
-button{
+button {
     padding: 0.5rem;
     background: none;
     border: none;
@@ -41,7 +41,7 @@ button{
     font-size: 2rem;
 }
 
-.card{
+.card {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px var(--light-shadow);
@@ -49,11 +49,11 @@ button{
     transition: all 0.3s ease;
 }
 
-.light-theme.card{
+.light-theme .card {
     background-color: var(--light-card);
 }
 
-.dark-theme.card{
+.dark-theme .card {
     background-color: var(--dark-card);
     box-shadow: 0 2px 10px var(--dark-shadow);
 }
